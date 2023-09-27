@@ -1,0 +1,47 @@
+/* Override Bootstrap styles */
+.navbar {
+    background-color: #343a40; /* Change the navbar background color */
+}
+
+.navbar-dark .navbar-brand {
+    color: #ffffff; /* Change the navbar brand (logo/text) color */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* Change the navbar link color */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff; /* Change the color of the navbar toggler icon */
+}
+
+/* Style the hero section */
+.jumbotron {
+    background-color: #f8f9fa; /* Change the background color of the hero section */
+    text-align: center; /* Center align text */
+    padding: 50px; /* Add padding to the hero section */
+}
+
+.jumbotron h1 {
+    color: #343a40; /* Change the hero section title color */
+}
+
+.jumbotron p {
+    color: #6c757d; /* Change the hero section text color */
+}
+
+.jumbotron .btn-primary {
+    background-color: #007bff; /* Change the button background color */
+    color: #ffffff; /* Change the button text color */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #343a40; /* Change the footer background color */
+    color: #ffffff; /* Change the footer text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding to the footer */
+}
+
+/* Additional custom styles */
+/* Add your additional custom styles here */
