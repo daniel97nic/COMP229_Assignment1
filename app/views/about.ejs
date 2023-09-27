@@ -1,9 +1,11 @@
+<!-- views/about.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>About Me</title>
 
     <!-- Include Bootstrap CSS from a CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,9 +17,12 @@
 
 <%- include('partials/navbar') %>
 
-<%- include('partials/header') %>
-
-<!-- Content for the main section of the page -->
+<div class="container mt-5">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet purus at ligula rhoncus rhoncus vel id elit. Suspendisse potenti. Nulla facilisi. Sed non odio non quam ultrices rhoncus vel a justo.</p>
+    <p>Nulla tristique, libero at varius luctus, mi dui fringilla justo, nec euismod justo tortor a nunc. Curabitur a lectus tellus. Proin nec enim justo. Praesent lacinia massa eu turpis elementum, euismod fermentum lectus eleifend.</p>
+    <p>Aliquam erat volutpat. Aenean tincidunt sapien ac urna placerat volutpat. Nunc feugiat quam quis est aliquet, vel eleifend justo ultricies. Etiam pellentesque vel quam non bibendum. Sed at fringilla velit.</p>
+</div>
 
 <%- include('partials/footer') %>
 
