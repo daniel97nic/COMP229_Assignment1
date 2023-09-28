@@ -9,6 +9,21 @@
 
     <!-- Include Bootstrap CSS from a CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add a horizontal line between projects */
+        .project-divider {
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Set fixed dimensions for project images */
+        .project-image {
+            width: 500px; /* Adjust the width as needed */
+            height: 270px; /* Adjust the height as needed */
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,8 +31,53 @@
 
 <div class="container mt-5">
     <h2 style="color: #333;">Projects</h2>
-    <p style="color: #666;">Here, you can showcase your projects and provide details about each project. You can add images, descriptions, and links to your work.</p>
-    <!-- Add your project details here -->
+    <p style="color: #666;">Here are some of the most recent projects that I have worked on:</p>
+    
+    <!-- Project 1 -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="/img/project1.png" alt="Project 1 Image" class="img-fluid project-image">
+        </div>
+        <div class="col-md-6">
+            <h3>Max Rep Calculator</h3>
+            <p>
+                I created a Max Rep Calculator tailored to powerlifting athletes. This tool helps calculate your max repetition (max rep) for squats, bench press, and deadlifts based on your workout routine, reps, and weights used. It's a must-have for serious strength trainers.
+            </p>
+        </div>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- Project 2 -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="/img/project2.png" alt="Project 2 Image" class="img-fluid project-image">
+        </div>
+        <div class="col-md-6">
+            <h3>Toronto Real Estate Agent Website</h3>
+            <p>
+                I collaborated on the development of a comprehensive website for a Toronto real estate agent. This website showcases property listings, offers user-friendly navigation, and highlights the agent's profile and services.
+            </p>
+        </div>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- Project 3 -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="/img/project3.png" alt="Project 3 Image" class="img-fluid project-image">
+        </div>
+        <div class="col-md-6">
+            <h3>Olympic Medal Winners and Records Program</h3>
+            <p>
+                I developed a C# program that efficiently stores information about Olympic medal winners and records. This program is a valuable resource for tracking the achievements of Olympic athletes, including whether an event resulted in a new record. It simplifies the process of accessing and managing Olympic data.
+            </p>
+            <br>
+            <br>
+        </div>
+    </div>
+    <br><br>
 </div>
 
 <%- include('partials/footer') %>
@@ -28,3 +88,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+

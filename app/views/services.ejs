@@ -9,6 +9,20 @@
 
     <!-- Include Bootstrap CSS from a CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add a horizontal line between services */
+        .service-divider {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Set larger dimensions for service icons */
+        .service-icon {
+            width: 300px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+        }
+    </style>
 </head>
 <body>
 
@@ -16,9 +30,51 @@
 
 <div class="container mt-5">
     <h2 style="color: #333;">Services</h2>
-    <p style="color: #666;">Describe the services you offer, your expertise, and how you can help potential clients. You can include pricing information or contact details for inquiries.</p>
-    <!-- Add your service details here -->
+    <p style="color: #666;">I offer a range of services based on my skills and expertise. Here's how I can help you:</p>
+
+    <!-- Service 1: C# and Java Development -->
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <img src="/img/coding.jpg" alt="C# and Java Development" class="img-fluid service-icon">
+        </div>
+        <div class="col-md-9">
+            <h3>C# and Java Development</h3>
+            <p>
+                I specialize in C# and Java application development. Whether you need a desktop application, a mobile app, or a web-based solution, I can bring your ideas to life using these powerful programming languages.
+            </p>
+        </div>
+    </div>
+    <hr class="service-divider"> <!-- Line to separate services -->
+
+    <!-- Service 2: Oracle SQL and Database Management -->
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <img src="/img/database.png" alt="Oracle SQL and Database Management" class="img-fluid service-icon">
+        </div>
+        <div class="col-md-9">
+            <h3>Oracle SQL and Database Management</h3>
+            <p>
+                I have extensive experience in Oracle SQL and database management. Whether it's designing, optimizing, or maintaining databases, I can ensure your data is organized and accessible for your applications.
+            </p>
+        </div>
+    </div>
+    <hr class="service-divider"> <!-- Line to separate services -->
+
+    <!-- Service 3: Web Development with HTML, CSS, and JavaScript -->
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <img src="/img/webdev.png" alt="Web Development with HTML, CSS, and JavaScript" class="img-fluid service-icon">
+        </div>
+        <div class="col-md-9">
+            <h3>Web Development with HTML, CSS, and JavaScript</h3>
+            <p>
+                I excel in web development using HTML, CSS, and JavaScript. Whether you need a stunning website, a dynamic web application, or user interface enhancements, I can create engaging web experiences.
+            </p>
+        </div>
+    </div>
 </div>
+<br>
+<br>
 
 <%- include('partials/footer') %>
 
