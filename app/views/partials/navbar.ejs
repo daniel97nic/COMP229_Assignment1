@@ -1,30 +1,46 @@
 <!-- navbar.ejs -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top" /> <!-- Add the path to your logo image -->
-        My Portfolio
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/services">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
-            </li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-gray" style="background-color: #343a40; height: 120px; color: #fff; position: relative;">
+    <div class="container">
+        <!-- Logo div -->
+        <div class="navbar-logo">
+            <a href="/">
+                 <img src="/img/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-top;" style="position: relative; margin-left: -115%;" />
+            </a>
+        </div>
+        <!-- Navigation toggler button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link custom-link" href="/" style="font-size: 24px; color: #fff">
+                        Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="/about" style="font-size: 24px; color: #fff">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="/projects" style="font-size: 24px; color: #fff">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="/services" style="font-size: 24px; color: #fff">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" href="/contact" style="font-size: 24px; color: #fff">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
