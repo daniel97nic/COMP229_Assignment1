@@ -5,20 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
 
-    <!-- Include Bootstrap CSS from a CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Link to Your Custom CSS (modify the path accordingly) -->
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
 
+    <style>
+        /* Center the button and add some styles */
+        .resume-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .resume-button {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff; 
+            color: #fff; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .resume-button a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .resume-button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
 </head>
 <body>
 
 <%- include('partials/navbar') %>
 
 <div class="container mt-5">
-    <!-- Add your headshot here in the middle -->
     <div style="text-align: center;">
         <img src="/img/photo2.jpg" alt="Daniel's Headshot" style="width: 200px; height: 200px; border-radius: 50%;">
     </div>
@@ -30,11 +58,19 @@
         Beyond the area of algorithms and computing, I have a strong passion for the great outdoors. I take comfort in the beauty of nature, whether I'm hiking across Canada's breathtaking landscapes or daydreaming about Nicaragua's stunning beaches. I also like immersing myself in diverse cultural experiences, such as trying out new foods and going to concerts.<br><br>
         I'm committed to lifelong development as I pursue my career as a software engineer. I think technology has the potential to resolve challenging issues, and I want to play a role in that. I wish to make a contribution to the ever-evolving profession of software engineering through hard effort, creativity, and devotion.<br><br>
     </p>
+    
+    <!-- Centered button container -->
+    <div class="resume-button-container">
+        <button class="resume-button">
+            <a href="/RESUME DANIEL MAYORGA.pdf" target="_blank">Check Out My Resume</a>
+        </button>
+        
+    </div>
+    
 </div>
 
 <%- include('partials/footer') %>
 
-<!-- Include Bootstrap JS and jQuery (at the end of the body for better performance) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
